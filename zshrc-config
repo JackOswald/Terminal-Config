@@ -1,0 +1,36 @@
+. `brew --prefix`/etc/profile.d/z.sh
+export ZSH="/Users/jackoswald/.oh-my-zsh"
+ZSH_THEME="agnoster"
+
+DISABLE_AUTO_TITLE="true"
+function set-title(){
+  TITLE="\[\e]2;$*\a\]"
+  echo -e ${TITLE}
+}
+
+plugins=(
+git 
+zsh-autosuggestions
+node 
+npm
+brew
+osx
+z
+extract
+)
+
+source $ZSH/oh-my-zsh.sh
+prompt_context() {
+  # Custom (Random emoji)
+  emojis=("⚡️" "🔥" "💀" "👑" "😎" "🐸" "🐵" "🦄" "🌈" "🍻" "🚀" "💡" "🎉" "🔑" "🚦" "🌙" "😀")
+  RAND_EMOJI_N=$(( $RANDOM % ${#emojis[@]} + 1))
+  prompt_segment black default "${emojis[$RAND_EMOJI_N]} "
+}
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
+
+function iterm2_print_user_vars() {
+  iterm2_set_user_var nodeVersion $(node -v)
+  iterm2_set_user_var pwd $(pwd)
+}
