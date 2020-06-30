@@ -1,0 +1,50 @@
+{
+    "files.autoSave": "afterDelay",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "emmet.includeLanguages": {
+        // "javascript": "javascriptreact"
+    },
+    "editor.formatOnSave": true,
+    "window.zoomLevel": 0,
+    "editor.minimap.enabled": false,
+    "editor.rulers": [],
+    "editor.fontSize": 14,
+    "explorer.confirmDelete": false,
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
+    "workbench.colorCustomizations": {
+        // "terminal.background":"#1d2021",
+        // "terminal.foreground":"#df8d1b",
+        "terminalCursor.background":"#A89984",
+        "terminalCursor.foreground":"#A89984",
+        "terminal.ansiBlack":"#1c1f20",
+        "terminal.ansiBlue":"#3398db",
+        "terminal.ansiBrightBlack":"#665C54",
+        "terminal.ansiBrightBlue":"#0D6678",
+        "terminal.ansiBrightCyan":"#8BA59B",
+        "terminal.ansiBrightGreen":"#57e690",
+        "terminal.ansiBrightMagenta":"#8F4673",
+        "terminal.ansiBrightRed":"#FB543F",
+        "terminal.ansiBrightWhite":"#feffff",
+        "terminal.ansiBrightYellow":"#ece100",
+        "terminal.ansiCyan":"#8BA59B",
+        "terminal.ansiGreen":"#00c200",
+        "terminal.ansiMagenta":"#bf3fbd",
+        "terminal.ansiRed":"#b43c29",
+        "terminal.ansiWhite":"#c7c7c7",
+        "terminal.ansiYellow":"#ece100"
+      },
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.integrated.fontSize": 14,
+    "javascript.format.enable": false,
+    "terminal.integrated.automationShell.osx": "",
+    "terminal.integrated.fontFamily": "\"Meslo LG L for Powerline\"",
+    "eslint.format.enable": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.rendererType": "canvas",
+    "terminal.integrated.automationShell.linux": "",
+    "emmet.excludeLanguages": [
+
+        "markdown"
+    ],
+}
